@@ -19,7 +19,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/40" />
 
-      <div className="relative mx-auto w-full max-w-[1800px] px-6 pb-24 md:px-10 md:pb-32">
+      <div className="relative mx-auto w-full max-w-[1800px] px-6 pt-28 pb-24 md:px-10 md:pt-36 md:pb-32">
         <Eyebrow light>Palm Jebel Ali &middot; Dubai</Eyebrow>
         <p className="mt-6 max-w-xl font-serif text-2xl leading-tight font-light text-white/90 italic md:text-3xl">
           The future is Palm Jebel Ali
