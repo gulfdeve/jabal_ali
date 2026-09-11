@@ -1,23 +1,23 @@
 import Image, { type StaticImageData } from "next/image";
-import yachtClub from "@/assets/images/yacht-club.webp";
-import villaSvF from "@/assets/images/villa-sv-f.webp";
-import villaBvC from "@/assets/images/villa-bv-c.webp";
-import villaBvL from "@/assets/images/villa-bv-l.webp";
-import villaBvI from "@/assets/images/villa-bv-i.webp";
-import villaSvG from "@/assets/images/villa-sv-g.webp";
-import nightLife from "@/assets/images/night-life.webp";
-import villaBvP from "@/assets/images/villa-bv-p.webp";
+import signatureYachtClub from "@/assets/images/signature-yacht-club.jpeg";
+import luxuryLifestyleMall from "@/assets/images/luxury-lifestyle-mall.jpeg";
+import beachClubs from "@/assets/images/beach-clubs.jpeg";
+import sunsetBeachPromenade from "@/assets/images/sunset-beach-promenade.jpeg";
+import leisurePark from "@/assets/images/leisure-park.jpeg";
+import sportsWellnessClub from "@/assets/images/sports-wellness-club.jpeg";
+import signatureWellnessResort from "@/assets/images/signature-wellness-resort.jpeg";
+import celebrationVillage from "@/assets/images/celebration-village.jpeg";
 import { Eyebrow } from "./Eyebrow";
 
 const AMENITIES: { image: StaticImageData; name: string }[] = [
-  { image: yachtClub, name: "Signature Yacht Club" },
-  { image: villaSvF, name: "Luxury Lifestyle Mall" },
-  { image: villaBvC, name: "Beach Clubs" },
-  { image: villaBvL, name: "Sunset Beach Promenade" },
-  { image: villaBvI, name: "Leisure Park" },
-  { image: villaSvG, name: "Sports & Wellness Club" },
-  { image: nightLife, name: "Signature Wellness Resort" },
-  { image: villaBvP, name: "Celebration Village" },
+  { image: signatureYachtClub, name: "Signature Yacht Club" },
+  { image: luxuryLifestyleMall, name: "Luxury Lifestyle Mall" },
+  { image: beachClubs, name: "Beach Clubs" },
+  { image: sunsetBeachPromenade, name: "Sunset Beach Promenade" },
+  { image: leisurePark, name: "Leisure Park" },
+  { image: sportsWellnessClub, name: "Sports & Wellness Club" },
+  { image: signatureWellnessResort, name: "Signature Wellness Resort" },
+  { image: celebrationVillage, name: "Celebration Village" },
 ];
 
 export function Amenities() {
