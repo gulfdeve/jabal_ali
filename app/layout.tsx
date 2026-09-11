@@ -14,9 +14,19 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Palm Jebel Ali Villas & Mansions | Waterfront Dubai",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
+  title: "Palm Jebel Ali Villas for Sale in Dubai | Luxury Beach Villas",
   description:
-    "Palm Jebel Ali brings a new era of waterfront living in Dubai. Register your interest in beach, coral and signature villa collections starting from AED 25 million.",
+    "Buy luxury beach villas and waterfront houses on Palm Jebel Ali, Dubai. Explore exclusive villa collections, floor plans, availability, prices and investment.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

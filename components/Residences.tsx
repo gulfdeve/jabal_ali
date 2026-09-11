@@ -22,7 +22,7 @@ const COLLECTIONS: {
     description:
       "Sophisticated style and perfect poise. Discover the blissful beach collection, designed to maximise views of the sea and to provide a feeling of indoor-outdoor harmony.",
     bedrooms: "5 – 6 Bedrooms",
-    size: "7,300 – 8,300 sq ft",
+    size: "7,500 – 8,500 sq ft",
   },
   {
     image: villaSvA,
@@ -31,8 +31,8 @@ const COLLECTIONS: {
     tagline: "Luxury villas with seven ensuite bedrooms",
     description:
       "Striking elegance meets daring design. Discover the sensational coral collection, designed with an emphasis on resort-style living to savour the spectacular seaside setting.",
-    bedrooms: "7 Bedrooms",
-    size: "11,000+ sq ft",
+    bedrooms: "6 – 7 Bedrooms",
+    size: "11,500 – 12,500 sq ft",
   },
   {
     image: villaSvE,
@@ -51,8 +51,11 @@ export function Residences() {
     <section id="residences" className="mx-auto max-w-[1800px] px-6 py-24 md:px-10 md:py-32">
       <Eyebrow>Residences</Eyebrow>
       <h2 className="mt-4 max-w-2xl font-serif text-4xl leading-tight font-light md:text-5xl">
-        Designed for a life by the sea
+        Luxury Residences
       </h2>
+      <p className="mt-3 max-w-2xl font-serif text-xl leading-tight font-light text-muted-foreground italic md:text-2xl">
+        Designed for a life by the sea
+      </p>
 
       <div className="mt-16 flex flex-col gap-20 md:mt-24 md:gap-28">
         {COLLECTIONS.map((c, i) => (

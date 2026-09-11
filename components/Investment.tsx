@@ -5,27 +5,27 @@ import { Eyebrow } from "./Eyebrow";
 const POINTS = [
   {
     number: "01",
-    title: "Perfectly Positioned",
+    title: "Prime Waterfront Location",
     description:
-      "Palm Jebel Ali sits between Port Jebel Ali and the Jebel Ali Marine Sanctuary, well connected to the rest of Dubai via Sheikh Zayed Road (E11).",
+      "Palm Jebel Ali is positioned along Dubai's Jebel Ali coastline, between Port Jebel Ali and the Jebel Ali Marine Sanctuary, with road connectivity via Sheikh Zayed Road (E11).",
   },
   {
     number: "02",
-    title: "A City-Scale Destination",
+    title: "Large-Scale Destination",
     description:
-      "10.5 million sqm of development across seven island districts, with 80+ resorts and hotels planned alongside residential neighbourhoods.",
+      "The development spans approximately 10.5 million sqm across 7 islands and 16 fronds, with residential communities alongside planned hospitality and leisure destinations.",
   },
   {
     number: "03",
-    title: "Finite Waterfront",
+    title: "Limited Waterfront Supply",
     description:
-      "Beachfront land in Dubai remains limited. Villas along the fronds are released in controlled, phased launches.",
+      "Palm Jebel Ali is being developed through phased villa releases, with beachfront residences introduced across different fronds and collections.",
   },
   {
     number: "04",
-    title: "Excellence in Design",
+    title: "Distinctive Villa Design",
     description:
-      "Nakheel has brought together leading designers so each villa lining the fronds carries a truly unique style and character.",
+      "Nakheel has introduced multiple villa collections with distinctive architectural styles, offering different designs, layouts and bedroom configurations.",
   },
 ];
 
@@ -42,8 +42,11 @@ export function Investment() {
         <div>
           <Eyebrow>Investment</Eyebrow>
           <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
-            A finite shoreline
+            Smart Investment
           </h2>
+          <p className="mt-3 max-w-md font-serif text-xl leading-tight font-light text-muted-foreground italic md:text-2xl">
+            A finite shoreline
+          </p>
           <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
             Palm Jebel Ali sits at the centre of Dubai&rsquo;s next growth
             cycle — a limited waterfront address released in controlled

@@ -27,8 +27,11 @@ export function Amenities() {
         <div>
           <Eyebrow>Amenities</Eyebrow>
           <h2 className="mt-4 max-w-xl font-serif text-4xl leading-tight font-light md:text-5xl">
-            Everything within reach
+            Elevated Amenities
           </h2>
+          <p className="mt-3 max-w-xl font-serif text-xl leading-tight font-light text-muted-foreground italic md:text-2xl">
+            Everything within reach
+          </p>
         </div>
         <p className="max-w-sm leading-relaxed text-muted-foreground">
           A destination designed around leisure, wellness, hospitality,

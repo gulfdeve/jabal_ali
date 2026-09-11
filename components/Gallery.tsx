@@ -48,8 +48,11 @@ export function Gallery() {
         <div>
           <Eyebrow>Gallery</Eyebrow>
           <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
-            The island in detail
+            Gallery
           </h2>
+          <p className="mt-3 font-serif text-xl leading-tight font-light text-muted-foreground italic md:text-2xl">
+            The island in detail
+          </p>
         </div>
         <p className="text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
           {PHOTOS.length} Selected Views

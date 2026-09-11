@@ -18,8 +18,11 @@ export function Location() {
         <div>
           <Eyebrow>Location</Eyebrow>
           <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
-            Connected to everything
+            Location
           </h2>
+          <p className="mt-3 max-w-md font-serif text-xl leading-tight font-light text-muted-foreground italic md:text-2xl">
+            Connected to everything
+          </p>
           <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
             Positioned along Dubai&rsquo;s south-western coastline, minutes
             from the city&rsquo;s next generation of infrastructure.

@@ -17,8 +17,11 @@ export function Lifestyle() {
       <div className="relative mx-auto max-w-3xl px-6 text-center text-white">
         <Eyebrow light>The Lifestyle</Eyebrow>
         <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
-          Days measured by the tide
+          Lifestyle
         </h2>
+        <p className="mt-3 font-serif text-xl leading-tight font-light text-white/85 italic md:text-2xl">
+          Days measured by the tide
+        </p>
         <p className="mt-6 leading-relaxed text-white/85 md:text-lg">
           Mornings on the sand, afternoons on the water, evenings along the
           promenade. Life here is designed to move slowly, with the sea

@@ -21,13 +21,22 @@ export function Hero() {
 
       <div className="relative mx-auto w-full max-w-[1800px] px-6 pb-24 md:px-10 md:pb-32">
         <Eyebrow light>Palm Jebel Ali &middot; Dubai</Eyebrow>
-        <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-[1.05] font-light text-white sm:text-6xl md:text-7xl lg:text-8xl">
+        <p className="mt-6 max-w-xl font-serif text-2xl leading-tight font-light text-white/90 italic md:text-3xl">
           The future is Palm Jebel Ali
+        </p>
+        <h1 className="mt-3 max-w-4xl font-serif text-5xl leading-[1.05] font-light text-white sm:text-6xl md:text-7xl lg:text-8xl">
+          Palm Jebel Ali Villas for Sale in Dubai
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
-          Palm Jebel Ali brings a new era of waterfront living. A vision that
-          ignites the imagination. A place where luxury is woven into every
-          detail. A home that captures what it means to truly live.
+          Explore Palm Jebel Ali villas for sale in Dubai, featuring luxury
+          beach villas and waterfront houses designed for exceptional island
+          living. Discover exclusive villa collections, private beaches,
+          spacious residences and stunning waterfront views.
+        </p>
+        <p className="mt-4 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
+          A vision that ignites the imagination. A place where luxury is
+          woven into every detail. A home that captures what it means to
+          truly live.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-6">
