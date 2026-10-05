@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import { validateRegistration } from "@/lib/validate-registration";
 
+export const runtime = "nodejs";
+export const maxDuration = 30;
+
 export async function POST(request: Request) {
   let body: unknown;
   try {
@@ -40,21 +43,14 @@ export async function POST(request: Request) {
     secure: SMTP_SECURE === "true",
     auth: { user: SMTP_USER, pass: SMTP_PASS },
     tls: { rejectUnauthorized: false },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 15000,
   });
 
   console.log(
     `[register] sending via ${SMTP_HOST}:${SMTP_PORT ?? 587} as ${SMTP_USER} → ${CONTACT_TO}`
   );
-
-  try {
-    await transporter.verify();
-  } catch (err) {
-    logSmtpError("SMTP connection/auth check failed", err);
-    return Response.json(
-      { message: "Could not send email right now. Please try again shortly." },
-      { status: 502 }
-    );
-  }
 
   try {
     const info = await transporter.sendMail({
@@ -89,8 +85,8 @@ export async function POST(request: Request) {
       `[register] sendMail resolved: messageId=${info.messageId} accepted=${JSON.stringify(info.accepted)} rejected=${JSON.stringify(info.rejected)} response=${info.response}`
     );
 
-    if (info.accepted.length === 0 || info.rejected.length > 0) {
-      console.error("[register] SMTP server did not fully accept the message — check the recipient address and spam filtering.", info);
+    if (info.accepted.length === 0) {
+      console.error("[register] SMTP server accepted no recipients.", info);
       return Response.json(
         { message: "Could not send email right now. Please try again shortly." },
         { status: 502 }
