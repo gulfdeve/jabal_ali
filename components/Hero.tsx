@@ -25,7 +25,7 @@ export function Hero() {
           The future is Palm Jebel Ali
         </p>
         <h1 className="mt-3 max-w-4xl font-serif text-5xl leading-[1.05] font-light text-white sm:text-6xl md:text-7xl lg:text-8xl">
-          Palm Jebel Ali Villas for Sale in Dubai
+          Palm Jebel Ali Villas for Sale in Dubai, UAE
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-white/85 md:text-lg">
           Explore Palm Jebel Ali villas for sale in Dubai, featuring luxury
