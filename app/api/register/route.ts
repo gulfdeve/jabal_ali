@@ -39,6 +39,7 @@ export async function POST(request: Request) {
     port: Number(SMTP_PORT ?? 587),
     secure: SMTP_SECURE === "true",
     auth: { user: SMTP_USER, pass: SMTP_PASS },
+    tls: { rejectUnauthorized: false },
   });
 
   console.log(
